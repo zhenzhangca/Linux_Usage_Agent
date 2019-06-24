@@ -1,5 +1,5 @@
-## Introduction
-What does this project do? e.g. Cluster Monitor Agent is an internal tool that monitors the cluster resources... it helps the infrastrcture team to ...
+## Introductio
+Cluster Monitor Agent is an internal tool that monitors the cluster resources, like the hardware specification, resources usage, etc. It helps the infrastrcture team to persist the data into a RDMS database, so that the user can understand cluster usage and plan for cluster growth.
 
 ## Architecture and Design
 1) Draw a cluster diagram with three Linux hosts, a DB, and angents
