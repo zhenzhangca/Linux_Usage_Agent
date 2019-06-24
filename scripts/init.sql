@@ -35,4 +35,4 @@ CREATE TABLE PUBLIC.host_usage
  );
 
 --Sample INSERT statement
-INSERT INTO hostf_usage("timestamp", host_id, memory_free, cpu_idel, cpu_kernel, disk_io, disk_available) VALUES ('2019-05-29 15:48:47.000', 1, 123, 123, 123, 123, 123);
+INSERT INTO host_usage("timestamp", host_id, memory_free, cpu_idel, cpu_kernel, disk_io, disk_available) VALUES ('2019-05-29 15:48:47.000', 1, 123, 123, 123, 123, 123);
