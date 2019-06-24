@@ -20,3 +20,19 @@ CREATE TABLE PUBLIC.host_info
 --Sample INSERT statement
 INSERT INTO host_info (id, hostname, cpu_number, cpu_architecture, cpu_model, cpu_mhz, l2_cache, "timestamp", total_mem) VALUES (1, 'jrvs-remote-desktop-centos7-6.us-centrall-a.c.spry-framework-236416.internal', 1, 'x86_64', 'Intel(R) Xeon(R) CPU @ 2.30GHz', 2300, 256, '2019-05-29 17:48:53.000', 601324);
 
+
+--DROP TABLE public.host_usage
+CREATE TABLE PUBLIC.host_usage
+(
+    "timestamp"        TIMESTAMP NOT NULL,
+    host_id            SERIAL  NOT NULL,
+    memory_free        INT4 NOT NULL,
+    cpu_idel           INT2 NOT NULL,
+    cpu_kernel         INT2 NOT NULL,
+    disk_io            INT4 NOT NULL,
+    disk_available     INT4 NOT NULL,
+    CONSTRAINT host_usage_host_info_fk FOREIGN KEY (host_id) REFERENCES host_info(id)
+ );
+
+--Sample INSERT statement
+INSERT INTO hostf_usage("timestamp", host_id, memory_free, cpu_idel, cpu_kernel, disk_io, disk_available) VALUES ('2019-05-29 15:48:47.000', 1, 123, 123, 123, 123, 123);
