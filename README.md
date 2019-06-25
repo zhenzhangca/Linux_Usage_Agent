@@ -4,7 +4,9 @@ Cluster Monitor Agent is an internal tool that monitors the cluster resources, l
 ## Architecture and Design
 1) Draw a cluster diagram with three Linux hosts, a DB, and angents
 2) Describe tables (no SQL code, just explain their usage)
+Create two tables -- host_info and host_usage. Host_info is used to persist hardware specifications, and host_usage is used to persist server CPU and memory data.
 3) Describe scripts (no code, just explain their usage)
+Create two scripts--host_info.sh and host_usage.sh. Host_info.sh is used to collect hardware information and persist data into host_info table. Host_usage.sh is used to collect CPU and memory data and persist data to the database. Meanwhile, this script will be called by a scheduler periodically(every minute).
 
 ## Usage
 1) how to init database and tables
