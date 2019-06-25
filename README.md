@@ -8,9 +8,13 @@ Cluster Monitor Agent is an internal tool that monitors the cluster resources, l
 
 ## Usage
 1) how to init database and tables
+
 2) 'host_info.sh' usage
+Create a new file ${work_dir}/linux_sql/host_agent/host_info.sh, then implement the script using ./host_info.sh localhost 5432 host_agent postgres password
 3) 'host_usage.sh' usage
+Create a new file ${work_dir}/linux_sql/host_agent/host_usage.sh, then implement the script using ./host_usage.sh localhost 5432 host_agent postgres password
 4) crontab setup
+Create a crontab job that triggers host_usage.sh every minute using crontab -e, edit the crontab then verify the result
 
 ## Improvments
 Write at least three things you want to improve
