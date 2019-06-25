@@ -10,7 +10,7 @@ Create two scripts--host_info.sh and host_usage.sh. Host_info.sh is used to coll
 
 ## Usage
 1) how to init database and tables
-
+Run init.sql once to create database and tables.
 2) 'host_info.sh' usage
 Create a new file ${work_dir}/linux_sql/host_agent/host_info.sh, then implement the script using ./host_info.sh localhost 5432 host_agent postgres password
 3) 'host_usage.sh' usage
