@@ -22,12 +22,11 @@ Create a new bash script file `/home/centos/dev/jrvs/bootcamp/linux_sql/host_age
 Create a new bash script file `/home/centos/dev/jrvs/bootcamp/linux_sql/host_agent/scripts/host_usage.sh`, then implement this script using command line `./host_usage.sh localhost 5432 host_agent postgres password`.
 4) Crontab setup
 - Create a `crontab` job using command line `crontab -e`.  
-- Edit the crontab to trigger `host_usage.sh` every minute as follows:  
-`* * * * * bash  
-/home/centos/dev/jrvs/bootcamp/linux_sql/host_agent/scripts/host_usage.sh localhost 5432 host_agent postgres password > /tmp/host_usage.log`
+- Edit the crontab to trigger `host_usage.sh` every minute as follows:   
+&nbsp;* * * * * bash  
+/home/centos/dev/jrvs/bootcamp/linux_sql/host_agent/scripts/host_usage.sh localhost 5432 host_agent postgres password > /tmp/host_usage.log
+- Verify `/tmp/host_usage.log`, make sure generated records have been inserted into `host_usage` table in the database. 
 
 ## Improvments
-Write at least three things you want to improve
-e.g.
 1) handle hardware update
 ......
