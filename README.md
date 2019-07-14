@@ -1,5 +1,5 @@
 ## Introduction
-Cluster Monitor Agent is an internal tool that monitors the cluster resources, like the hardware specification, resources usage, etc. It helps the infrastructure team to persist the data into the corresponding tables in the PostgreSQL RDBMS, so that the users can understand cluster usage and plan for cluster growth.
+The Cluster Monitor Agent is an internal tool that monitors the cluster resources, like the hardware specification, resources usage, etc. It helps the infrastructure team to persist the data into the corresponding tables in the PostgreSQL RDBMS, so that the users can understand cluster usage and plan for cluster growth.
 
 ## Architecture and Design
 1) Cluster diagram:  
@@ -27,6 +27,7 @@ Create a new bash script file `/home/centos/dev/jrvs/bootcamp/linux_sql/host_age
 /home/centos/dev/jrvs/bootcamp/linux_sql/host_agent/scripts/host_usage.sh localhost 5432 host_agent postgres password > /tmp/host_usage.log  
 - Verify `/tmp/host_usage.log`, make sure generated records have been inserted into `host_usage` table in the database. 
 
-## Improvments
-1) handle hardware update
-......
+## Improvements
+1) Handle hardware update.  
+2) Optimize system architecture.  
+3) Rationalize software and hardware configurations.
