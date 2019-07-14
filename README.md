@@ -15,7 +15,7 @@ Create two bash scripts `host_info.sh` and `host_usage.sh` for the Cluster Monit
 
 ## Usage
 1) Init the database and tables  
-Create a new SQL file `/home/centos/dev/jrvs/bootcamp/linux_sql/host_agent/scripts/init.sql`, then run this SQL file for once to create `host_agent` database, 'host_info` and `host_usage` tables.
+Create a new SQL file `/home/centos/dev/jrvs/bootcamp/linux_sql/host_agent/scripts/init.sql`, then run this SQL file for once to create `host_agent` database, `host_info` and `host_usage` tables.
 2) Implement the 'host_info.sh' script  
 Create a new bash script file `/home/centos/dev/jrvs/bootcamp/linux_sql/host_agent/scripts/host_info.sh`, then implement this script using command line `./host_info.sh localhost 5432 host_agent postgres password`.
 3) Implement the 'host_usage.sh' script  
