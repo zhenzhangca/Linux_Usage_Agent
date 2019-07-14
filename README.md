@@ -5,11 +5,11 @@ The Cluster Monitor Agent is an internal tool that monitors the cluster resource
 1) Cluster diagram:  
 ![image](https://github.com/zhenzhangca/Linux_Usage_Agent/blob/master/img-folder/Untitled%20Diagram.jpg)  
 2) Tables  
-Create a database called 'host_agent' in the PostgreSQL RDBMS, then create two tables called `host_info` and `host_usage` in the `host_agent` database.   
+Create a database `host_agent` in the PostgreSQL RDBMS, then create two tables `host_info` and `host_usage` in the `host_agent` database.   
 - `host_info` table is used to persist hardware specifications.  
 - `host_usage` table is used to persist server CPU and memory data.
 3) Bash scripts  
-Create two bash scripts called `host_info.sh` and `host_usage.sh` for the Cluster Monitor Agent.  
+Create two bash scripts `host_info.sh` and `host_usage.sh` for the Cluster Monitor Agent.  
 - `host_info.sh` is used to collect hardware information and persist those information into `host_info` table in the database.   
 - `host_usage.sh` is used to collect CPU and memory data and persist those data into `host_usage` table in the database. Meanwhile, this bash script will be called by a scheduler periodically(e.g. a crontab job that runs this script every minute).
 
