@@ -1,5 +1,4 @@
 --query 1
-
 SELECT i.cpu_number, 
        u.host_id, 
        i.total_mem 
